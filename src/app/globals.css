@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 248, 96, 97;
+    --color-secondary: 252, 244, 244;
+    --color-third: 253, 245, 245;
+    --color-white: 255, 255, 255;
+  }
+}

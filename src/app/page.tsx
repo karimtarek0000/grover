@@ -1,7 +1,13 @@
-export default function Home() {
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "Landing page",
+};
+
+export default function Landing() {
   return (
     <main>
-      <h1>landing page</h1>
+      <h1>Landing page</h1>
     </main>
   );
 }
