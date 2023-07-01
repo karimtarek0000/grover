@@ -1,0 +1,6 @@
+.header {
+  @apply flex flex-wrap items-center h-[70vh];
+}
+.note {
+  @apply w-fit ps-5 overflow-hidden flex justify-center items-center text-16 text-primary h-[2.875rem] rounded-full bg-sixth;
+}
