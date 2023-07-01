@@ -28,7 +28,7 @@ const Header = (): JSX.Element => {
           getting out in this pandemic.
         </p>
 
-        <div className="flex items-center gap-4 mt-16">
+        <div className="flex items-center mt-16">
           <Button type="primary">order now</Button>
           <Button>
             <span className={StyleButton.iconProcess}>
