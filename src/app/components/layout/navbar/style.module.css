@@ -1,6 +1,6 @@
-/* Search */
+/* Navbar => Search */
 .searchWrapper {
-  @apply h-[3.375rem] border border-gray-100 flex overflow-hidden rounded-xl shadow-2xl shadow-gray-300/70;
+  @apply h-[3.375rem] border border-gray-100 flex rounded-xl shadow-2xl shadow-gray-300/70;
 }
 .search {
   @apply flex items-center px-3 py-2;
@@ -10,4 +10,7 @@
 }
 .cart {
   @apply flex items-center p-2 px-4 relative before:absolute before:top-2/4 before:inset-x-0 before:h-[60%] before:-translate-y-1/2 before:bg-[#F2F2F2] before:w-[2px];
+}
+.cartCount {
+  @apply flex justify-center items-center text-white text-14 absolute w-[28px] h-[28px] bg-primary rounded-full -top-[15px] -end-[10px];
 }

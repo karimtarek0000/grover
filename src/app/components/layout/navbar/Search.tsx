@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import RenderSVG from "../../shared/SVG/RenderSVG";
-import style from "./style.module.css";
+import Style from "./style.module.css";
 
-const { searchWrapper, search, cart, input } = style;
+const { searchWrapper, search, cart, cartCount, input } = Style;
 
 const Search = (): JSX.Element => {
   return (
@@ -16,6 +16,7 @@ const Search = (): JSX.Element => {
       <input className={input} type="text" placeholder="Search" />
 
       <Link href="/" className={cart}>
+        <span className={cartCount}>2</span>
         <RenderSVG name="cart" size="1.5rem" />
       </Link>
     </div>
