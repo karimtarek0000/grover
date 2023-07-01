@@ -12,4 +12,10 @@
     --color-sixth: 253, 234, 235;
     --color-white: 255, 255, 255;
   }
+
+  @media only screen and (max-width: 640px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
 }
