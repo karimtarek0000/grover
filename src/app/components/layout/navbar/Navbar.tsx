@@ -5,9 +5,9 @@ import RenderSVG from "../../shared/RenderSVG";
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav className="flex flex-wrap items-center justify-between px-1 py-3">
+    <nav className="flex flex-wrap items-center justify-between px-1 py-7">
       <Link href="/">
-        <Image src={logo} alt="logo" width="150" />
+        <Image src={logo} alt="logo" width="130" />
       </Link>
 
       <div className="flex gap-10 font-medium capitalize text-forth text-16">
