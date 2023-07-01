@@ -19,6 +19,7 @@ module.exports = {
         primary: withOpacity("color-primary"),
         secondary: withOpacity("color-secondary"),
         third: withOpacity("color-third"),
+        forth: withOpacity("color-forth"),
         white: "var(--color-white)",
       },
       fontFamily: "var(--font-poppins)",
@@ -35,6 +36,9 @@ module.exports = {
         regular: 400,
         medium: 500,
         bold: 700,
+      },
+      colors: {
+        forth: withOpacity("color-forth"),
       },
     },
   },

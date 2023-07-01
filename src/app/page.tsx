@@ -1,4 +1,5 @@
 import { Metadata } from "next/types";
+import Navbar from "./components/layout/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Landing page",
@@ -6,8 +7,8 @@ export const metadata: Metadata = {
 
 export default function Landing() {
   return (
-    <main>
-      <h1>Landing page</h1>
+    <main className="container mx-auto">
+      <Navbar />
     </main>
   );
 }
