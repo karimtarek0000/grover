@@ -5,8 +5,7 @@ import RenderSVG from "../../shared/RenderSVG";
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav className="flex flex-wrap items-center justify-between px-1 py-3 ">
-      {/* Logo */}
+    <nav className="flex flex-wrap items-center justify-between px-1 py-3">
       <Link href="/">
         <Image src={logo} alt="logo" width="150" />
       </Link>
