@@ -9,12 +9,12 @@ import StyleButton from "../../shared/buttons/style.module.css";
 import RenderSVG from "../../shared/SVG/RenderSVG";
 import Button from "../../shared/buttons/Buttons";
 
-const Header = (): JSX.Element => {
-  const { header, note } = Style;
+const { header, headerCol1, headerCol2, headerWrapperImages, note } = Style;
 
+const Header = (): JSX.Element => {
   return (
     <header className={header}>
-      <div className="relative z-20 order-last w-full lg:order-none lg:basis-1/2">
+      <div className={headerCol1}>
         <div className={note}>
           More than Faster
           <div className="w-[3.9375rem] h-[3.125rem] pt-1">
@@ -43,8 +43,8 @@ const Header = (): JSX.Element => {
         </div>
       </div>
 
-      <div className="flex items-end justify-center order-first w-full lg:order-none lg:basis-1/2">
-        <div className="relative flex-initial overflow-hidden sm:overflow-visible">
+      <div className={headerCol2}>
+        <div className={headerWrapperImages}>
           <Image
             src={headerImg1}
             alt="header-one"

@@ -1,6 +1,15 @@
 .header {
   @apply flex flex-wrap px-3 pt-8 md:px-0;
 }
+.headerCol {
+  @apply relative z-20 order-last w-full lg:order-none lg:basis-1/2;
+}
+.headerCol2 {
+  @apply flex items-end justify-center order-first w-full lg:order-none lg:basis-1/2;
+}
+.headerWrapperImages {
+  @apply relative flex-initial overflow-hidden sm:overflow-visible;
+}
 .note {
   @apply w-fit ps-5 overflow-hidden flex justify-center items-center text-16 text-primary h-[2.875rem] rounded-full bg-sixth;
 }
