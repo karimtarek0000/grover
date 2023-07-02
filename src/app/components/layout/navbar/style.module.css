@@ -6,7 +6,7 @@
   @apply flex items-center px-3 py-2;
 }
 .input {
-  @apply focus:outline-none placeholder:text-black;
+  @apply focus:outline-none placeholder:text-black w-[10.1875rem];
 }
 .cart {
   @apply flex items-center p-2 px-4 relative before:absolute before:top-2/4 before:inset-x-0 before:h-[60%] before:-translate-y-1/2 before:bg-[#F2F2F2] before:w-[2px];

@@ -10,7 +10,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header className={header}>
-      <div className="break-after-column flex-[50%]">
+      <div className="md:basis-1/2">
         <div className={note}>
           More than Faster
           <div className="w-[3.9375rem] h-[3.125rem]">
@@ -38,8 +38,7 @@ const Header = (): JSX.Element => {
           </Button>
         </div>
       </div>
-      {/*  */}
-      <div className="flex-[50%]"></div>
+      <div className="md:basis-1/2">2</div>
     </header>
   );
 };

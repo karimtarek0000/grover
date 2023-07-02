@@ -1,5 +1,5 @@
 .header {
-  @apply px-3 pt-8 md:px-0 lg:columns-2;
+  @apply flex flex-wrap px-3 pt-8 md:px-0;
 }
 .note {
   @apply w-fit ps-5 overflow-hidden flex justify-center items-center text-16 text-primary h-[2.875rem] rounded-full bg-sixth;

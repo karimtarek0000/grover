@@ -11,6 +11,10 @@
     --color-fifth: 46, 46, 46;
     --color-sixth: 253, 234, 235;
     --color-white: 255, 255, 255;
+
+    /* For scrollbar firefox */
+    scrollbar-color: rgb(var(--color-primary)) rgb(var(--color-white)) !important;
+    scrollbar-width: thin !important;
   }
 
   @media only screen and (max-width: 640px) {
@@ -19,3 +23,38 @@
     }
   }
 }
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
+/* ///////////////////////////////
+//// Change style scrollbar
+@mixin scrollBar($width, $cTrack, $cThumb, $type: false) {
+  //
+  @if $type == 'html' {
+    scrollbar-color: $cThumb $cTrack;
+  }
+
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $cTrack;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $cThumb;
+    @content;
+  }
+} */
