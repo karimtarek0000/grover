@@ -1,12 +1,12 @@
 /* Navbar => Search */
 .searchWrapper {
-  @apply h-[3.375rem] border border-gray-100 flex rounded-xl shadow-2xl shadow-gray-300/70;
+  @apply h-[3.375rem] border border-gray-100 flex w-[90%] lg:w-auto mx-auto lg:mx-0 rounded-xl shadow-2xl shadow-gray-300/70;
 }
 .search {
   @apply flex items-center px-3 py-2;
 }
 .input {
-  @apply focus:outline-none placeholder:text-black w-[10.1875rem];
+  @apply focus:outline-none placeholder:text-black w-full lg:w-[10.1875rem];
 }
 .cart {
   @apply flex items-center p-2 px-4 relative before:absolute before:top-2/4 before:inset-x-0 before:h-[60%] before:-translate-y-1/2 before:bg-[#F2F2F2] before:w-[2px];
