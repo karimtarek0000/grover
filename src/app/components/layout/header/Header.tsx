@@ -4,14 +4,15 @@ import headerImg1 from "@/assets/images/section-1/header/1.png";
 import headerImg2 from "@/assets/images/section-1/header/2.png";
 import headerImg3 from "@/assets/images/section-1/header/3.png";
 import headerImg4 from "@/assets/images/section-1/header/4.png";
+// CSS AND SVG
 import Style from "./style.module.css";
 import StyleButton from "../../shared/buttons/style.module.css";
 import RenderSVG from "../../shared/SVG/RenderSVG";
 import Button from "../../shared/buttons/Buttons";
 
-const { header, headerCol1, headerCol2, headerWrapperImages, note } = Style;
-
 const Header = (): JSX.Element => {
+  const { header, headerCol1, headerCol2, headerWrapperImages, note } = Style;
+
   return (
     <header className={header}>
       <div className={headerCol1}>
