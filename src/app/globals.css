@@ -22,6 +22,10 @@
       font-size: 87.5%;
     }
   }
+
+  body {
+    @apply overflow-x-hidden;
+  }
 }
 
 /* Scroll */

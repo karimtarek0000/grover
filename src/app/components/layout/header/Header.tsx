@@ -14,7 +14,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header className={header}>
-      <div className="md:basis-1/2">
+      <div className="relative z-20 order-last w-full lg:order-none lg:basis-1/2">
         <div className={note}>
           More than Faster
           <div className="w-[3.9375rem] h-[3.125rem] pt-1">
@@ -43,31 +43,40 @@ const Header = (): JSX.Element => {
         </div>
       </div>
 
-      <div className="relative flex items-end justify-center md:basis-1/2">
-        <Image
-          src={headerImg1}
-          alt="header-one"
-          width="182"
-          height="272"
-          className="absolute start-0 top-[25%] z-10"
-        />
-        <div className="w-[21.875rem] h-fit overflow-y-hidden flex-none">
-          <Image src={headerImg2} alt="header-two" className="-mt-12" />
+      <div className="flex items-end justify-center order-first w-full lg:order-none lg:basis-1/2">
+        <div className="relative flex-initial overflow-hidden sm:overflow-visible">
+          <Image
+            src={headerImg1}
+            alt="header-one"
+            sizes="(min-width: 640px) 182px, 91px"
+            width="182"
+            height="272"
+            className="absolute top-4 sm:top-[7.375rem] -z-[1] sm:z-10 sm:-start-[9.0625rem]"
+          />
+          <Image
+            src={headerImg2}
+            sizes="(min-width: 640px) 417px, 208.5px"
+            width="417"
+            height="205"
+            alt="header-two"
+          />
+          <Image
+            src={headerImg3}
+            alt="header-three"
+            sizes="(min-width: 640px) 280px, 140px"
+            width="280"
+            height="74"
+            className="absolute top-0 -end-16 sm:top-8 sm:-end-[9.625rem]"
+          />
+          <Image
+            src={headerImg4}
+            alt="header-foure"
+            sizes="(min-width: 640px) 120px, 60px"
+            width="120"
+            height="156"
+            className="absolute end-0 top-36 sm:-end-[4.375rem] -z-[1] sm:-z-[1]"
+          />
         </div>
-        <Image
-          src={headerImg3}
-          alt="header-three"
-          width="280"
-          height="74"
-          className="absolute top-[20%] end-0"
-        />
-        <Image
-          src={headerImg4}
-          alt="header-foure"
-          width="120"
-          height="156"
-          className="absolute top-[40%] end-14 -z-[1]"
-        />
       </div>
     </header>
   );
