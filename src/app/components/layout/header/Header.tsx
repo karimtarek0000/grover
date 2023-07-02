@@ -75,7 +75,7 @@ const Header = (): JSX.Element => {
             sizes="(min-width: 640px) 120px, 60px"
             width="120"
             height="156"
-            className="absolute end-0 top-36 sm:-end-[4.375rem] -z-[1] sm:-z-[1]"
+            className="absolute end-0 top-36 sm:top-48 sm:-end-[4.375rem] -z-[1] sm:-z-[1]"
           />
         </div>
       </div>
