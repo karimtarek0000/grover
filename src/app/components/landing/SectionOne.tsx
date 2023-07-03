@@ -34,7 +34,7 @@ const SectionOne = (): JSX.Element => {
           </div>
           <div className="px-6 mt-4">
             <h3 className="font-medium text-22">{item.title}</h3>
-            <p className="mt-3 text-14 text-primary font-regular">
+            <p className="mt-3 text-18 lg:text-14 text-primary font-regular">
               {item.desc}
             </p>
           </div>
@@ -49,7 +49,7 @@ const SectionOne = (): JSX.Element => {
         <h2 className={head1}>What we Serve</h2>
         <h2 className={head2}>fruit and vegetable delivered to your home</h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[3.125rem] mt-16">
+        <div className="grid px-3 md:grid-cols-3 gap-5 md:gap-[3.125rem] mt-16">
           {cardItems}
         </div>
       </div>

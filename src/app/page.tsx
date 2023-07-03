@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function Landing() {
   return (
     <main>
-      {/* <div className="container">
+      <div className="container">
         <Navbar />
         <Header />
-      </div> */}
+      </div>
       <SectionOne />
     </main>
   );
