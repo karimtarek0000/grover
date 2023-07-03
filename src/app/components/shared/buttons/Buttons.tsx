@@ -6,11 +6,18 @@ import Style from "../../shared/buttons/style.module.css";
 type ButtonProps = {
   children: ReactNode;
   type?: string;
+  className?: string;
 };
 
-const Button = ({ children, type = "" }: ButtonProps): JSX.Element => {
+const Button = ({
+  children,
+  className = "",
+  type = "",
+}: ButtonProps): JSX.Element => {
   return (
-    <button className={`${Style.default} ${Style[type as string]}`}>
+    <button
+      className={`${Style.default} ${Style[type as string]} ${className}`}
+    >
       {children}
     </button>
   );

@@ -22,7 +22,7 @@ const items = [
   },
 ];
 
-const { card, cardWrapper, head1, head2 } = Style;
+const { card, cardWrapper, head1, head2, description } = Style;
 
 const SectionOne = (): JSX.Element => {
   const cardItems = items.map((item) => {
@@ -34,9 +34,7 @@ const SectionOne = (): JSX.Element => {
           </div>
           <div className="px-6 mt-4">
             <h3 className="font-medium text-22">{item.title}</h3>
-            <p className="mt-3 text-18 lg:text-14 text-primary font-regular">
-              {item.desc}
-            </p>
+            <p className={`${description} text-18 lg:text-14`}>{item.desc}</p>
           </div>
         </div>
       </div>
@@ -45,9 +43,11 @@ const SectionOne = (): JSX.Element => {
 
   return (
     <section className="text-center bg-secondary">
-      <div className="max-w-[62.5rem] mx-auto py-24">
+      <div className="container-inner">
         <h2 className={head1}>What we Serve</h2>
-        <h2 className={head2}>fruit and vegetable delivered to your home</h2>
+        <h2 className={`${head2} md:max-w-2xl`}>
+          fruit and vegetable delivered to your home
+        </h2>
 
         <div className="grid px-3 md:grid-cols-3 gap-5 md:gap-[3.125rem] mt-16">
           {cardItems}

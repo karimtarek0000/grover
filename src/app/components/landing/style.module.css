@@ -1,8 +1,12 @@
+/* Section One */
 .head1 {
   @apply font-medium text-18 text-primary;
 }
 .head2 {
-  @apply mx-auto mt-3 font-bold capitalize text-fifth text-40 md:max-w-2xl;
+  @apply mx-auto mt-3 font-bold capitalize text-fifth text-40;
+}
+.description {
+  @apply mt-3 text-primary font-regular;
 }
 .card {
   @apply relative h-[19.375rem] after:absolute after:top-0 after:z-10 after:w-full after:h-0 lg:after:h-full after:rounded-lg after:left-0 after:bg-primary after:hover:-rotate-6 after:transition-all
@@ -13,4 +17,24 @@
 }
 .cardWrapper {
   @apply relative z-20 flex flex-col items-center justify-center h-full bg-white rounded-lg;
+}
+
+/* Section Two */
+.section2Wrapper {
+  @apply grid items-center lg:grid-cols-section2 gap-y-10;
+}
+.col1 {
+  @apply flex justify-center px-4 lg:justify-start lg:px-0;
+}
+.wrapperImages {
+  @apply relative flex items-center justify-center w-[23rem] h-[23rem] sm:w-[36.8125rem] sm:h-[36.8125rem] bg-secondary rounded-full;
+}
+.image1 {
+  @apply w-[102px] lg:w-[204px] absolute z-30 -translate-y-1/2 drop-shadow-2xl top-2/4 end-0 lg:-end-11;
+}
+.image2 {
+  @apply relative w-[17rem] sm:w-[24.25rem] -top-24 sm:-top-36;
+}
+.elSVG {
+  @apply absolute -bottom-8 sm:bottom-[5.4375rem] scale-[0.6] sm:scale-100;
 }

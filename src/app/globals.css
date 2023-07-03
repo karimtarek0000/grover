@@ -24,8 +24,13 @@
   }
 }
 
+@layer components {
+  .container-inner {
+    @apply max-w-[68.75rem] mx-auto py-24;
+  }
+}
+
 body {
-  overflow-x: hidden !important;
   height: 10000px;
 }
 

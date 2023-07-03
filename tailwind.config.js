@@ -42,6 +42,9 @@ module.exports = {
         forth: withOpacity("color-forth"),
         fifth: withOpacity("color-fifth"),
       },
+      gridTemplateColumns: {
+        section2: "1fr minmax(12.5rem, 25rem)",
+      },
     },
     container: {
       center: true,

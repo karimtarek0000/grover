@@ -33,7 +33,7 @@ const Header = (): JSX.Element => {
           getting out in this pandemic.
         </p>
 
-        <div className="flex flex-col mt-16 md:items-center md:flex-row">
+        <div className="flex flex-col justify-center mt-16 lg:justify-start md:items-center md:flex-row">
           <Button type="primary">order now</Button>
           <Button>
             <span className={StyleButton.iconProcess}>
