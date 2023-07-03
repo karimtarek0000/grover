@@ -21,7 +21,6 @@ module.exports = {
         third: withOpacity("color-third"),
         forth: withOpacity("color-forth"),
         sixth: withOpacity("color-sixth"),
-        white: "var(--color-white)",
       },
       fontFamily: "var(--font-poppins)",
       fontSize: {
@@ -43,6 +42,9 @@ module.exports = {
         forth: withOpacity("color-forth"),
         fifth: withOpacity("color-fifth"),
       },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],

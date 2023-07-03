@@ -1,0 +1,16 @@
+.head1 {
+  @apply font-medium text-18 text-primary;
+}
+.head2 {
+  @apply mx-auto mt-3 font-bold capitalize text-fifth text-40 md:max-w-2xl;
+}
+.card {
+  @apply relative h-[19.375rem] after:absolute after:top-0 after:z-10 after:w-full after:h-full after:rounded-lg after:left-0 after:bg-primary after:hover:-rotate-6 after:transition-all
+  after:duration-150 after:ease-out after:opacity-0 after:hover:opacity-100;
+}
+.card::after {
+  transform-origin: 12.5rem 0.625rem;
+}
+.cardWrapper {
+  @apply relative z-20 flex flex-col items-center justify-center h-full bg-white rounded-lg;
+}
