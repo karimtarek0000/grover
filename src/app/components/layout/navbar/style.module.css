@@ -1,4 +1,7 @@
 /* Navbar => Search */
+.navbar {
+  @apply flex flex-col lg:flex-row items-center justify-between gap-[3.125rem] lg:gap-0 px-1 py-7;
+}
 .searchWrapper {
   @apply h-[3.375rem] border border-gray-100 flex w-[90%] lg:w-auto mx-auto lg:mx-0 rounded-xl shadow-2xl shadow-gray-300/70;
 }

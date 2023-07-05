@@ -13,3 +13,6 @@
 .note {
   @apply w-fit ps-5 overflow-hidden flex justify-center items-center text-16 text-primary h-[2.875rem] rounded-full bg-sixth;
 }
+.wrapperButtons {
+  @apply flex flex-col justify-center mt-16 lg:justify-start md:items-center md:flex-row;
+}
