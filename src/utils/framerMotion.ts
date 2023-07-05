@@ -1,13 +1,34 @@
-export const slideVertical = (y: string | number, duration: number = 0.75) => {
+export const slideVertical = (
+  y: string | number,
+  duration: number = 0.75,
+  hide?: object,
+  active?: object
+) => {
   return {
     hide: {
       y,
       opacity: 0,
+      ...hide,
     },
     active: {
       y: 0,
       opacity: 1,
+      ...active,
       transition: { type: "tween", ease: "easeInOut", duration },
+    },
+  };
+};
+
+export const slideHorizontal = (x: string | number) => {
+  return {
+    hide: {
+      x,
+      opacity: 0,
+    },
+    active: {
+      x: 0,
+      opacity: 1,
+      transition: { type: "tween", ease: "easeInOut", duration: 0.75 },
     },
   };
 };
@@ -23,20 +44,6 @@ export const staggerContainer = (
         staggerChildren,
         delayChildren,
       },
-    },
-  };
-};
-
-export const slideHorizontal = (x: string | number) => {
-  return {
-    hide: {
-      x,
-      opacity: 0,
-    },
-    active: {
-      x: 0,
-      opacity: 1,
-      transition: { type: "tween", ease: "easeInOut", duration: 0.75 },
     },
   };
 };
