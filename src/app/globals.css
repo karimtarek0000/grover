@@ -11,6 +11,7 @@
     --color-fifth: 46, 46, 46;
     --color-sixth: 253, 234, 235;
     --color-seventh: 249, 186, 70;
+    --color-eighth: 103, 103, 103;
     --color-white: 255, 255, 255;
 
     /* For scrollbar firefox */
@@ -29,10 +30,6 @@
   .container-inner {
     @apply max-w-[68.75rem] mx-auto py-10 lg:py-24;
   }
-}
-
-body {
-  height: 10000px;
 }
 
 /* Scroll */

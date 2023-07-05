@@ -25,7 +25,7 @@ module.exports = {
       fontFamily: "var(--font-poppins)",
       fontSize: {
         14: "0.875rem",
-        16: "1rem",
+        16: ["1rem", "2em"],
         18: ["1.125rem", "2em"],
         20: "1.25rem",
         22: "1.375rem",
@@ -42,10 +42,12 @@ module.exports = {
         forth: withOpacity("color-forth"),
         fifth: withOpacity("color-fifth"),
         seventh: withOpacity("color-seventh"),
+        eighth: withOpacity("color-eighth"),
       },
       gridTemplateColumns: {
         section2: "1fr minmax(12.5rem, 25rem)",
         section3: "minmax(12.5rem, 30rem) 1fr",
+        footer: "2fr repeat(2, 11.25rem) 1fr",
       },
     },
     container: {

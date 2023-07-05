@@ -1,0 +1,21 @@
+.footerWrapperOne {
+  @apply border-b-2 pb-5 lg:pb-[5rem] border-gray-100 grid gap-5 lg:gap-[3.125rem] sm:grid-cols-3 lg:grid-cols-footer;
+}
+.footerWrapperTwo {
+  @apply flex flex-wrap items-center justify-center gap-5 py-5 sm:justify-between text-eighth;
+}
+.wrapperOneCol1 {
+  @apply text-center lg:text-start col-span-full lg:col-auto;
+}
+.wrapperOneCol1Desc {
+  @apply lg:max-w-[16.625rem] text-16 text-eighth font-regular mt-7;
+}
+.wrapperOneCol4Desc {
+  @apply text-center sm:text-start lg:max-w-[11.9375rem] text-16 text-eighth font-regular mt-2 sm:mt-7;
+}
+.wrapperFooterLinks {
+  @apply capitalize flex flex-col items-center sm:items-start space-y-4 sm:space-y-[1.9375rem];
+}
+.footerLink {
+  @apply text-eighth flex flex-col items-center sm:items-start gap-[1.25rem];
+}

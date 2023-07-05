@@ -5,6 +5,7 @@ import SectionOne from "./components/landing/SectionOne";
 import SectionTwo from "./components/landing/SectionTwo";
 import SectionThree from "./components/landing/SectionThree";
 import SectionFour from "./components/landing/SectionFour";
+import Footer from "./components/layout/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Landing page",
@@ -21,6 +22,7 @@ export default function Landing() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <Footer />
     </main>
   );
 }
