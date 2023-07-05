@@ -1,6 +1,6 @@
 /* Section One */
 .head1 {
-  @apply font-medium text-18 text-primary;
+  @apply font-medium text-18;
 }
 .head2 {
   @apply mx-auto mt-3 font-bold capitalize text-fifth text-40;
@@ -23,18 +23,35 @@
 .section2Wrapper {
   @apply grid items-center lg:grid-cols-section2 gap-y-10;
 }
-.col1 {
+.sectionTwoCol1 {
   @apply flex justify-center px-4 lg:justify-start lg:px-0;
 }
 .wrapperImages {
   @apply relative flex items-center justify-center w-[23rem] h-[23rem] sm:w-[36.8125rem] sm:h-[36.8125rem] bg-secondary rounded-full;
 }
-.image1 {
+.sectionTwoimage1 {
   @apply w-[102px] lg:w-[204px] absolute z-30 -translate-y-1/2 drop-shadow-2xl top-2/4 end-0 lg:-end-11;
 }
-.image2 {
+.sectionTwoimage2 {
   @apply relative w-[17rem] sm:w-[24.25rem] -top-24 sm:-top-36;
 }
-.elSVG {
+.sectionTwoElSVG {
   @apply absolute -bottom-8 sm:bottom-[5.4375rem] scale-[0.6] sm:scale-100;
+}
+
+/* Section Three */
+.section3Wrapper {
+  @apply grid items-end px-2 lg:grid-cols-section3 gap-y-20;
+}
+.sectionThreeCol1 {
+  @apply order-last px-2 text-center lg:text-start lg:px-0 lg:order-none;
+}
+.sectionThreeCol2 {
+  @apply flex justify-center order-first lg:order-none;
+}
+.sectionThreeimage2 {
+  @apply absolute w-[83px] md:w-[166px] -translate-y-1/2 top-2/4 end-0 md:-end-16 drop-shadow-2xl;
+}
+.sectionThreeElSVG {
+  @apply absolute -bottom-8 start-11 md:start-0;
 }

@@ -1,8 +1,11 @@
 .default {
-  @apply flex items-center shrink-0 justify-center gap-4 capitalize px-[2.5rem] py-[1.25rem] rounded-xl text-20;
+  @apply flex items-center shrink-0 justify-center gap-4 capitalize px-[2.5rem] py-[1.25rem] rounded-xl text-20 whitespace-nowrap;
 }
 .primary {
   @apply text-white transition-all duration-300 bg-primary hover:opacity-90;
+}
+.secondary {
+  @apply transition-colors duration-300 border text-primary border-primary hover:text-white hover:bg-primary;
 }
 .iconProcess {
   @apply flex items-center justify-center shadow-2xl shadow-gray-300/70 rounded-full w-[4.375rem] h-[4.375rem] bg-white;

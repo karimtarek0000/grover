@@ -9,34 +9,34 @@ const {
   head2,
   description,
   section2Wrapper,
-  col1,
+  sectionTwoCol1,
   wrapperImages,
-  image1,
-  image2,
-  elSVG,
+  sectionTwoimage1,
+  sectionTwoimage2,
+  sectionTwoElSVG,
 } = Style;
 
 const SectionTwo = (): JSX.Element => {
   return (
-    <section className=" container-inner lg:py-[12.5rem]">
+    <section className="container-inner pt-[6.25rem] lg:pt-[12.5rem] lg:pb-[6.25rem]">
       <div className={section2Wrapper}>
-        <div className={col1}>
+        <div className={sectionTwoCol1}>
           <div className={wrapperImages}>
             <Image
               src={img2}
               alt="img-2"
               sizes="(min-width: 768px) 388px, 194px"
-              className={image2}
+              className={sectionTwoimage2}
             />
             <Image
               src={img1}
               alt="img-1"
               sizes="(min-width: 768px) 204px, 102px"
-              className={image1}
+              className={sectionTwoimage1}
             />
 
             <svg
-              className={elSVG}
+              className={sectionTwoElSVG}
               width="435"
               height="303"
               viewBox="0 0 435 303"
@@ -53,7 +53,7 @@ const SectionTwo = (): JSX.Element => {
         </div>
 
         <div className="px-2 text-center lg:text-start lg:px-0">
-          <h3 className={head1}>WHY CHOOSE US</h3>
+          <h3 className={`${head1} text-primary`}>WHY CHOOSE US</h3>
           <h3 className={head2}>Find Favorites and Discover New Ones</h3>
           <p className={`${description} text-18 mb-11 mt-7`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus

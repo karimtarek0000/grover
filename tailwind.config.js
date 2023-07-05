@@ -41,9 +41,11 @@ module.exports = {
         primary: withOpacity("color-primary"),
         forth: withOpacity("color-forth"),
         fifth: withOpacity("color-fifth"),
+        seventh: withOpacity("color-seventh"),
       },
       gridTemplateColumns: {
         section2: "1fr minmax(12.5rem, 25rem)",
+        section3: "minmax(12.5rem, 30rem) 1fr",
       },
     },
     container: {
