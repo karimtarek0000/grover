@@ -4,3 +4,4 @@ Grocen atssures fresh grocery every morning to your family without getting out i
 
 - Next 13
 - Tailwind
+- Framer Motion
