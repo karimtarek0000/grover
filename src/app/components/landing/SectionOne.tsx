@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { slideVertical, staggerContainer } from "@/utils/framerMotion";
 import icon1 from "@/assets/icons/section-2/1.svg";
 import icon2 from "@/assets/icons/section-2/2.svg";
 import icon3 from "@/assets/icons/section-2/3.svg";
@@ -27,7 +31,11 @@ const { card, cardWrapper, head1, head2, description } = Style;
 const SectionOne = (): JSX.Element => {
   const cardItems = items.map((item) => {
     return (
-      <div key={item.title} className={card}>
+      <motion.div
+        key={item.title}
+        variants={slideVertical("3.125rem", 1)}
+        className={card}
+      >
         <div className={cardWrapper}>
           <div className="max-h-[6.25rem]">
             <Image src={item.icon} alt="Free shipping" />
@@ -37,21 +45,38 @@ const SectionOne = (): JSX.Element => {
             <p className={`${description} text-18 lg:text-14`}>{item.desc}</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   });
 
   return (
     <section className="text-center bg-secondary">
       <div className="container-inner">
-        <h2 className={`${head1} text-primary`}>What we Serve</h2>
-        <h2 className={`${head2} md:max-w-2xl`}>
+        <motion.h2
+          initial="hide"
+          whileInView="active"
+          variants={slideVertical("3.125rem", 1)}
+          className={`${head1} text-primary`}
+        >
+          What we Serve
+        </motion.h2>
+        <motion.h2
+          initial="hide"
+          whileInView="active"
+          variants={slideVertical("3.125rem", 1)}
+          className={`${head2} md:max-w-2xl`}
+        >
           fruit and vegetable delivered to your home
-        </h2>
+        </motion.h2>
 
-        <div className="grid px-3 md:grid-cols-3 gap-5 md:gap-[3.125rem] mt-16">
+        <motion.div
+          initial="hide"
+          whileInView="active"
+          variants={staggerContainer(0.5, 0.3)}
+          className="grid px-3 md:grid-cols-3 gap-5 md:gap-[3.125rem] mt-16"
+        >
           {cardItems}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
