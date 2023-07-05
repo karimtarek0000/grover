@@ -53,7 +53,7 @@ const SectionTwo = (): JSX.Element => {
         </div>
 
         <div className="px-2 text-center lg:text-start lg:px-0">
-          <h3 className={`${head1} text-primary`}>WHY CHOOSE US</h3>
+          <h3 className={`${head1} text-seventh`}>WHY CHOOSE US</h3>
           <h3 className={head2}>Find Favorites and Discover New Ones</h3>
           <p className={`${description} text-18 mb-11 mt-7`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus

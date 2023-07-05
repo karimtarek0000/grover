@@ -44,7 +44,7 @@ const SectionOne = (): JSX.Element => {
   return (
     <section className="text-center bg-secondary">
       <div className="container-inner">
-        <h2 className={head1}>What we Serve</h2>
+        <h2 className={`${head1} text-primary`}>What we Serve</h2>
         <h2 className={`${head2} md:max-w-2xl`}>
           fruit and vegetable delivered to your home
         </h2>
