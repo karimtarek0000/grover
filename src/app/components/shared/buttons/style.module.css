@@ -7,6 +7,9 @@
 .secondary {
   @apply transition-colors duration-300 border text-primary border-primary hover:text-white hover:bg-primary;
 }
+.third {
+  @apply transition-colors border-gray-400 duration-300 border text-fifth hover:text-white hover:bg-primary gap-x-[1.875rem];
+}
 .iconProcess {
   @apply flex items-center justify-center shadow-2xl shadow-gray-300/70 rounded-full w-[4.375rem] h-[4.375rem] bg-white;
 }

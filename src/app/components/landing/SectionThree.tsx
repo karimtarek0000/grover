@@ -17,7 +17,7 @@ const {
 
 const SectionThree = (): JSX.Element => {
   return (
-    <section className="container-inner">
+    <section className="pb-20 lg:pb-44 container-inner">
       <div className={section3Wrapper}>
         <div className={sectionThreeCol1}>
           <h3 className={`${head1} uppercase text-seventh`}>HOME DELIVERY</h3>

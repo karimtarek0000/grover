@@ -4,6 +4,7 @@ import Header from "./components/layout/header/Header";
 import SectionOne from "./components/landing/SectionOne";
 import SectionTwo from "./components/landing/SectionTwo";
 import SectionThree from "./components/landing/SectionThree";
+import SectionFour from "./components/landing/SectionFour";
 
 export const metadata: Metadata = {
   title: "Landing page",
@@ -19,6 +20,7 @@ export default function Landing() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </main>
   );
 }

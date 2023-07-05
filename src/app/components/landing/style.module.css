@@ -55,3 +55,11 @@
 .sectionThreeElSVG {
   @apply absolute -bottom-8 start-11 md:start-0;
 }
+
+/* Section Four */
+.section4Wrapper {
+  @apply grid items-center px-2 lg:grid-cols-2 gap-y-8;
+}
+.sectionFourButtonsWrapper {
+  @apply flex flex-wrap items-center justify-center gap-6 lg:justify-start;
+}
