@@ -19,16 +19,23 @@ export const slideVertical = (
   };
 };
 
-export const slideHorizontal = (x: string | number) => {
+export const slideHorizontal = (
+  x: string | number,
+  duration: number = 0.75,
+  hide?: object,
+  active?: object
+) => {
   return {
     hide: {
       x,
       opacity: 0,
+      ...hide,
     },
     active: {
       x: 0,
       opacity: 1,
-      transition: { type: "tween", ease: "easeInOut", duration: 0.75 },
+      ...active,
+      transition: { type: "tween", ease: "easeInOut", duration },
     },
   };
 };

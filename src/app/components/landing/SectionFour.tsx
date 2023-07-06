@@ -1,8 +1,16 @@
+"use client";
+
 import Button from "../shared/buttons/Buttons";
 import Style from "./style.module.css";
 import Image from "next/image";
 import img1 from "@/assets/images/section-5/1.png";
 import RenderSVG from "../shared/SVG/RenderSVG";
+import { motion } from "framer-motion";
+import {
+  slideHorizontal,
+  slideVertical,
+  staggerContainer,
+} from "@/utils/framerMotion";
 
 const {
   head1,
@@ -17,24 +25,47 @@ const SectionFour = (): JSX.Element => {
     <section className="bg-secondary">
       <div className="container-inner">
         <div className={section4Wrapper}>
-          <div className="flex justify-center">
+          <motion.div
+            initial="hide"
+            whileInView="active"
+            variants={slideHorizontal("-100%", 2)}
+            className="flex justify-center"
+          >
             <Image
               src={img1}
               alt="img-2"
               sizes="(min-width: 768px) 289px, 144.5px"
               width="289"
             />
-          </div>
+          </motion.div>
 
-          <div className="px-2 text-center lg:text-start lg:px-0">
-            <h3 className={`${head1} text-primary`}>Download our app</h3>
-            <h3 className={head2}>Get the Groceries app order more easily.</h3>
-            <p className={`${description} text-18 mb-16 mt-7`}>
+          <motion.div
+            initial="hide"
+            whileInView="active"
+            variants={staggerContainer(0.4, 0.5)}
+            className="px-2 text-center lg:text-start lg:px-0"
+          >
+            <motion.h3
+              variants={slideVertical("1.5625rem")}
+              className={`${head1} text-primary`}
+            >
+              Download our app
+            </motion.h3>
+            <motion.h3 variants={slideVertical("1.5625rem")} className={head2}>
+              Get the Groceries app order more easily.
+            </motion.h3>
+            <motion.p
+              variants={slideVertical("1.5625rem")}
+              className={`${description} text-18 mb-16 mt-7`}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut.
-            </p>
+            </motion.p>
 
-            <div className={sectionFourButtonsWrapper}>
+            <motion.div
+              variants={slideVertical("1.5625rem")}
+              className={sectionFourButtonsWrapper}
+            >
               <Button
                 className="sm:max-w-[13rem] lg:mx-0 lg:w-fit"
                 type="third"
@@ -57,8 +88,8 @@ const SectionFour = (): JSX.Element => {
                 />
                 Play Store
               </Button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
