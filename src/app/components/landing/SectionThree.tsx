@@ -63,7 +63,7 @@ const SectionThree = (): JSX.Element => {
             variants={staggerContainer(0.4, 1)}
             className="relative"
           >
-            <motion.div variants={slideVertical("-3.75rem")}>
+            <motion.div variants={slideVertical("-4.375rem")}>
               <Image
                 src={img1}
                 sizes="(min-width: 768px) 417px, 208px"
@@ -73,7 +73,7 @@ const SectionThree = (): JSX.Element => {
             </motion.div>
             <motion.div
               className={sectionThreeimage2}
-              variants={slideHorizontal("1.875rem", undefined, { y: "-50%" })}
+              variants={slideHorizontal("3.125rem", undefined, { y: "-50%" })}
             >
               <Image
                 src={img2}
@@ -83,26 +83,34 @@ const SectionThree = (): JSX.Element => {
             </motion.div>
 
             <svg
-              className={sectionThreeElSVG}
               width="48"
-              height="38"
-              viewBox="0 0 48 38"
+              height="40"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              className={sectionThreeElSVG}
             >
               <motion.path
                 variants={{
                   hide: {
                     pathLength: 0,
+                    strokeWidth: 9,
                     opacity: 0,
                   },
                   active: {
                     pathLength: 1,
                     opacity: 1,
+                    transition: {
+                      type: "tween",
+                      ease: "easeOut",
+                      duration: 0.75,
+                      opacity: {
+                        duration: 0,
+                      },
+                    },
                   },
                 }}
-                d="M44.5334 37.6508C46.1429 34.7435 47.164 31.5476 47.5384 28.2457C47.9128 24.9438 47.6331 21.6004 46.7154 18.4066C45.7977 15.2127 44.2599 12.2309 42.1898 9.63136C40.1197 7.03181 37.5579 4.86545 34.6506 3.25598C31.7433 1.6465 28.5474 0.625419 25.2455 0.251037C21.9435 -0.123345 18.6002 0.156303 15.4063 1.07401C12.2125 1.99172 9.23066 3.52952 6.63112 5.59961C4.03157 7.6697 1.86522 10.2315 0.25574 13.1389L9.13127 18.0523C10.0955 16.3105 11.3934 14.7758 12.9507 13.5356C14.5081 12.2954 16.2945 11.3741 18.208 10.8243C20.1214 10.2745 22.1244 10.107 24.1025 10.3313C26.0807 10.5555 27.9953 11.1673 29.7371 12.1315C31.4789 13.0957 33.0137 14.3936 34.2538 15.951C35.494 17.5084 36.4153 19.2948 36.9651 21.2082C37.5149 23.1216 37.6825 25.1246 37.4582 27.1028C37.2339 29.081 36.6221 30.9956 35.6579 32.7373L44.5334 37.6508Z"
-                fill="#F9BA45"
+                stroke="#F9BA45"
+                stroke-width="9"
+                d="M3.99998 16.1772C9.99329 5.97046 23.126 1.61848 33.3327 7.61179 43.5394 13.6051 45.8293 26.7122 39.836 36.9189"
               />
             </svg>
           </motion.div>
